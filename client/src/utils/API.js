@@ -12,7 +12,7 @@ class API extends React.Component{
     componentDidMount(){
       axios.get(`http://localhost:5000/api/players`)
       .then(result => {
-        console.log('result:', result.data);
+        //console.log('result:', result.data);
         this.setState({ players: result.data});
       })
     }
